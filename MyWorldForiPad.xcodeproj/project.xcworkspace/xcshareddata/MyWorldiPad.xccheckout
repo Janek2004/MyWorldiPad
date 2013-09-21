@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D1F9AB8C-4930-4AB8-A369-AC6E6D6B23F5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>MyWorldiPad</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>705CE608-305E-438D-8649-AF2D7A58D6E1</key>
+		<string>https://github.com/Janek2004/MyWorldiPad.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>MyWorldiPad.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>705CE608-305E-438D-8649-AF2D7A58D6E1</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Janek2004/MyWorldiPad.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>705CE608-305E-438D-8649-AF2D7A58D6E1</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>705CE608-305E-438D-8649-AF2D7A58D6E1</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MyWorldiPad</string>
+		</dict>
+	</array>
+</dict>
+</plist>
