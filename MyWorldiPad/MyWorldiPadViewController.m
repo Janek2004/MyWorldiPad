@@ -488,7 +488,7 @@ BOOL updated; // For checking if MapKit updated the user's location
 
 - (IBAction)showInfoView:(id)sender {
     InfoViewController * i=[[InfoViewController alloc]initWithNibName:@"InfoViewController" bundle:nil];
-    i.contentSizeForViewInPopover=i.view.frame.size;
+   // i.contentSizeForViewInPopover=i.view.frame.size;
     // [self presentModalViewController:i animated:YES];
     UIPopoverController * pop=[[UIPopoverController alloc]initWithContentViewController:i];
     [pop presentPopoverFromBarButtonItem:infoBarButton permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
@@ -501,7 +501,7 @@ BOOL updated; // For checking if MapKit updated the user's location
 - (IBAction)showTimeView:(id)sender{
     TimeViewController *time=[[TimeViewController alloc]initWithNibName:@"TimeViewController" bundle:nil];
     time.distance=distanceKm;
-    time.contentSizeForViewInPopover=time.view.frame.size;
+   // time.contentSizeForViewInPopover=time.view.frame.size;
     UIPopoverController * pop=[[UIPopoverController alloc]initWithContentViewController:time];
     [pop presentPopoverFromBarButtonItem:actionBarButton permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
     // [time release];

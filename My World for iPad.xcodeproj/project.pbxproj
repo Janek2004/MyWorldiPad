@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F964A1A1446374F00E21940 /* MyWorld72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F964A191446374F00E21940 /* MyWorld72.png */; };
 		82092574165176D3003E4E98 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 82092573165176D3003E4E98 /* search.png */; };
+		8249F77517EE4C860047303C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8249F77417EE4C860047303C /* Images.xcassets */; };
 		8487317F142EE9350079023C /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8487317E142EE9350079023C /* Annotation.m */; };
 		84873183142EE9500079023C /* AnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84873182142EE9500079023C /* AnnotationView.m */; };
 		84BC5F92142EE60F0021DAAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BC5F91142EE60F0021DAAD /* UIKit.framework */; };
@@ -47,6 +48,7 @@
 /* Begin PBXFileReference section */
 		4F964A191446374F00E21940 /* MyWorld72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyWorld72.png; sourceTree = "<group>"; };
 		82092573165176D3003E4E98 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		8249F77417EE4C860047303C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = " My World for iPad/Images.xcassets"; sourceTree = "<group>"; };
 		8487317D142EE9350079023C /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		8487317E142EE9350079023C /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 		84873181142EE9500079023C /* AnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationView.h; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		84BC5F82142EE60E0021DAAD = {
 			isa = PBXGroup;
 			children = (
+				8249F77417EE4C860047303C /* Images.xcassets */,
 				84BC5FB5142EE68E0021DAAD /* Images */,
 				84BC5FB3142EE6320021DAAD /* CoreLocation.framework */,
 				84BC5FB1142EE62A0021DAAD /* MapKit.framework */,
@@ -225,6 +228,11 @@
 			attributes = {
 				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "University of West Florida";
+				TargetAttributes = {
+					84BC5F8C142EE60F0021DAAD = {
+						DevelopmentTeam = 96W6Q3D8BE;
+					};
+				};
 			};
 			buildConfigurationList = 84BC5F87142EE60E0021DAAD /* Build configuration list for PBXProject "My World for iPad" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -257,6 +265,7 @@
 				84BC5FC9142EE69F0021DAAD /* customButton.png in Resources */,
 				84BC5FCC142EE69F0021DAAD /* MathStarsIcon57pix.png in Resources */,
 				84BC5FCD142EE69F0021DAAD /* myLocationBigger.png in Resources */,
+				8249F77517EE4C860047303C /* Images.xcassets in Resources */,
 				84BC5FCE142EE69F0021DAAD /* MyWorld57.png in Resources */,
 				84BC5FCF142EE69F0021DAAD /* MyWorld114.png in Resources */,
 				84BC5FD1142EE69F0021DAAD /* mzl.jarxthyh.170x170-75.png in Resources */,
@@ -359,18 +368,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Laura White (R7F3Z4GZ27)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyWorldiPad/My World for iPad-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MyWorldiPad/My World for iPad-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "16560F71-DE3B-4A65-BE01-DE0058702DAB";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -379,17 +390,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Laura J. White";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Laura J. White";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Laura J. White (96W6Q3D8BE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Laura J. White (96W6Q3D8BE)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyWorldiPad/My World for iPad-Prefix.pch";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "MyWorldiPad/My World for iPad-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6F6DB560-B0AF-4C3B-B324-22275F09C317";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6F6DB560-B0AF-4C3B-B324-22275F09C317";
+				PROVISIONING_PROFILE = "B180BE84-ADAA-45A7-805A-06E5597EEC08";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B180BE84-ADAA-45A7-805A-06E5597EEC08";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
