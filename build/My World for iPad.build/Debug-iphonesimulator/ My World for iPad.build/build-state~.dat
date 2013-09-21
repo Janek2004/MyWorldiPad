@@ -1,0 +1,754 @@
+T My World for iPad
+v5
+r1
+cCheck dependencies
+cProcessInfoPlistFile "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/Info.plist" "MyWorldiPad/My World for iPad-Info.plist"
+cProcessPCH "/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch.pth" "MyWorldiPad/My World for iPad-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/main.o" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadViewController.o" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadAppDelegate.o" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/TimeViewController.o" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/InfoViewController.o" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/Annotation.o" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/Annotation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/AnnotationView.o" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/AnnotationView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/ My World for iPad" normal i386
+cGenerateDSYMFile "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app.dSYM" "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/ My World for iPad"
+cCompileXIB /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/MainWindow.xib
+cCopyStringsFile "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/en.lproj/InfoPlist.strings" MyWorldiPad/en.lproj/InfoPlist.strings
+cCompileXIB /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/MyWorldiPadViewController.xib
+cCpResource alertviewcustom.png "build/Debug-iphonesimulator/ My World for iPad.app/alertviewcustom.png"
+cCpResource bird.png "build/Debug-iphonesimulator/ My World for iPad.app/bird.png"
+cCpResource car.png "build/Debug-iphonesimulator/ My World for iPad.app/car.png"
+cCpResource customButton.png "build/Debug-iphonesimulator/ My World for iPad.app/customButton.png"
+cCpResource MathStarsIcon57pix.png "build/Debug-iphonesimulator/ My World for iPad.app/MathStarsIcon57pix.png"
+cCpResource myLocationBigger.png "build/Debug-iphonesimulator/ My World for iPad.app/myLocationBigger.png"
+cCpResource MyWorld57.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld57.png"
+cCpResource MyWorld114.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld114.png"
+cCpResource MyWorld512.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld512.png"
+cCpResource mzl.jarxthyh.170x170-75.png "build/Debug-iphonesimulator/ My World for iPad.app/mzl.jarxthyh.170x170-75.png"
+cCpResource Pin2.png "build/Debug-iphonesimulator/ My World for iPad.app/Pin2.png"
+cCpResource Pin23.png "build/Debug-iphonesimulator/ My World for iPad.app/Pin23.png"
+cCpResource plane.png "build/Debug-iphonesimulator/ My World for iPad.app/plane.png"
+cCpResource ruler.png "build/Debug-iphonesimulator/ My World for iPad.app/ruler.png"
+cCompileXIB /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.xib
+cCompileXIB /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.xib
+cCpResource MyWorld72.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld72.png"
+cCpResource MyWorld144.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld144.png"
+cCpResource NameIs.png "build/Debug-iphonesimulator/ My World for iPad.app/NameIs.png"
+cTouch "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk
+c000000004FDF7E110000000000000110
+t1340046865
+s272
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004FCB78210000000000244490
+t1338734625
+s2376848
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c000000004FCB78200000000000089510
+t1338734624
+s562448
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004FCB78220000000000353830
+t1338734626
+s3487792
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/MapKit.framework/MapKit
+c000000004FCB782400000000000D9D60
+t1338734628
+s892256
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004FCB78270000000000905E40
+t1338734631
+s9461312
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MathStarsIcon57pix.png
+c000000004E47E42A00000000000019CE
+t1313334314
+s6606
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorld114.png
+c000000004E6DF0110000000000005FB3
+t1315827729
+s24499
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorld144.png
+c00000000500972370000000000007A11
+t1342796343
+s31249
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorld512.png
+c000000004E6D4E650000000000031EDB
+t1315786341
+s204507
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorld57.png
+c000000004E6DEFE000000000000020E9
+t1315827680
+s8425
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorld72.png
+c000000004E95FFB90000000000002B3C
+t1318453177
+s11068
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/Annotation.m
+c00000000500986C40000000000000198
+t1342801604
+s408
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/AnnotationView.m
+c00000000500957E50000000000000256
+t1342789605
+s598
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.m
+c00000000500957E500000000000007D0
+t1342789605
+s2000
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.xib
+c000000005013DDCB0000000000009D27
+t1343479243
+s40231
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/My World for iPad-Prefix.pch
+c000000004E7EAE8F0000000000000148
+t1316925071
+s328
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPad-Prefix.pch
+c000000004E7EAE8F0000000000000148
+t1316925071
+s328
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadAppDelegate.m
+c000000004E7EAE8F0000000000000983
+t1316925071
+s2435
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadViewController.m
+c00000000500986C40000000000004839
+t1342801604
+s18489
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.m
+c00000000500986C40000000000000F8C
+t1342801604
+s3980
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.xib
+c0000000050095E7C000000000000849D
+t1342791292
+s33949
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/InfoPlist.strings
+c000000004E7EAE8F000000000000002D
+t1316925071
+s45
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/MainWindow.xib
+c000000004E7EAE8F0000000000004D21
+t1316925071
+s19745
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/MyWorldiPadViewController.xib
+c0000000050097E89000000000000A08B
+t1342799497
+s41099
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/main.m
+c000000004E7EAE8F0000000000000174
+t1316925071
+s372
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/NameIs.png
+c000000005012D10200000000000020FE
+t1343410434
+s8446
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/Pin2.png
+c000000004E6D23790000000000000A3A
+t1315775353
+s2618
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/Pin23.png
+c000000004E6D22A80000000000000AD6
+t1315775144
+s2774
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/alertviewcustom.png
+c000000004E6AB76E0000000000001C15
+t1315616622
+s7189
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/bird.png
+c000000004E61BEDF0000000000018927
+t1315028703
+s100647
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app.dSYM
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/ My World for iPad
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/Info.plist
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/InfoViewController.nib
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/MathStarsIcon57pix.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/MyWorld114.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/MyWorld144.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/MyWorld512.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/MyWorld57.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/MyWorld72.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/NameIs.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/Pin2.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/Pin23.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/PkgInfo
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/TimeViewController.nib
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/alertviewcustom.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/bird.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/car.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/customButton.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/en.lproj/InfoPlist.strings
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/en.lproj/MainWindow.nib
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/en.lproj/MyWorldiPadViewController.nib
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/myLocationBigger.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/mzl.jarxthyh.170x170-75.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/plane.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/ruler.png
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/ My World for iPad.LinkFileList
+c000000005013DDCB0000000000000474
+t1343479243
+s1140
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/Annotation.o
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/AnnotationView.o
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/InfoViewController.o
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadAppDelegate.o
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadViewController.o
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/TimeViewController.o
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/main.o
+t2
+s0
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/car.png
+c000000004E62245100000000000062AE
+t1315054673
+s25262
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/customButton.png
+c000000004E6ABEAC00000000000010D4
+t1315618476
+s4308
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/myLocationBigger.png
+c000000004E61AC7D0000000000000F09
+t1315023997
+s3849
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/mzl.jarxthyh.170x170-75.png
+c000000004E68910D00000000000029FC
+t1315475725
+s10748
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/plane.png
+c000000004E6226FC00000000000092D2
+t1315055356
+s37586
+
+N/Users/laurawhite/Desktop/MyWorldiPad201207128/ruler.png
+c000000004E61AEC90000000000000F60
+t1315024585
+s3936
+
+N/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch.pth
+t2
+s0
+
+N/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MyWorldiPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/MyWorldiPad-Prefix.pch.pth
+t2
+s0
+
+NMyWorldiPad/My World for iPad-Info.plist
+c000000005013DAF300000000000005EA
+t1343478515
+s1514
+
+NMyWorldiPad/MyWorldiPad-Info.plist
+c000000005009833D00000000000005E6
+t1342800701
+s1510
+
+CBuild AST from /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/Annotation.m
+r0
+
+CBuild AST from /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/AnnotationView.m
+r0
+
+CBuild AST from /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.m
+r0
+
+CBuild AST from /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadAppDelegate.m
+r0
+
+CBuild AST from /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadViewController.m
+r0
+
+CBuild AST from /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.m
+r0
+
+CBuild AST from /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/main.m
+r0
+
+CCheck dependencies
+r0
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies7de7cb4b15c4b541^8d97da4b15c4b541^---0#1#0#--18"Check dependencies36"3E3A4BA4-2C8D-49FD-9B0C-DED395D0A702-
+
+CCompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/Annotation.o" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/Annotation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365172044.500692
+e365172044.569061
+r1
+xCompileC
+xbuild/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/Annotation.o
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/Annotation.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"Compile /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/Annotation.m6c5b804c15c4b541^86ad914c15c4b541^---0#0#0#-19%DVTDocumentLocation2@87"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/Annotation.m0000000000000000^3627"CompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/Annotation.o" MyWorldiPad/Annotation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-generated-files.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-own-target-headers.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-all-target-headers.hmap" -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-project-headers.hmap" -I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/include "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources/i386" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources" -F/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator -include "/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch" -MMD -MT dependencies -MF "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/Annotation.d" --serialize-diagnostics "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/Annotation.dia" -c /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/Annotation.m -o "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/Annotation.o"36"04EC1C7D-1F36-4FB0-92CE-AE7C48C4432F-
+
+CCompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/AnnotationView.o" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/AnnotationView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365172044.521388
+e365172044.601300
+r1
+xCompileC
+xbuild/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/AnnotationView.o
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/AnnotationView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Compile /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/AnnotationView.ma2b6854c15c4b541^e1ed994c15c4b541^---0#0#0#-19%DVTDocumentLocation2@91"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/AnnotationView.m0000000000000000^3651"CompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/AnnotationView.o" MyWorldiPad/AnnotationView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-generated-files.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-own-target-headers.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-all-target-headers.hmap" -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-project-headers.hmap" -I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/include "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources/i386" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources" -F/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator -include "/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch" -MMD -MT dependencies -MF "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/AnnotationView.d" --serialize-diagnostics "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/AnnotationView.dia" -c /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/AnnotationView.m -o "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/AnnotationView.o"36"30203109-6988-4CC0-A8B5-30956D79E9B2-
+
+CCompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/InfoViewController.o" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365172044.492290
+e365172044.578692
+r1
+xCompileC
+xbuild/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/InfoViewController.o
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.m50397e4c15c4b541^0d37944c15c4b541^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.m0000000000000000^3675"CompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/InfoViewController.o" MyWorldiPad/InfoViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-generated-files.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-own-target-headers.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-all-target-headers.hmap" -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-project-headers.hmap" -I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/include "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources/i386" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources" -F/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator -include "/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch" -MMD -MT dependencies -MF "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/InfoViewController.d" --serialize-diagnostics "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/InfoViewController.dia" -c /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.m -o "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/InfoViewController.o"36"D5E08FA8-FF66-434B-B314-D71BCCD41929-
+
+CCompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadAppDelegate.o" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365172044.350961
+e365172044.499333
+r1
+xCompileC
+xbuild/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadAppDelegate.o
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadAppDelegate.md1045a4c15c4b541^a2d37f4c15c4b541^---0#0#0#-19%DVTDocumentLocation2@99"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadAppDelegate.m0000000000000000^3699"CompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadAppDelegate.o" MyWorldiPad/MyWorldiPadAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-generated-files.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-own-target-headers.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-all-target-headers.hmap" -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-project-headers.hmap" -I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/include "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources/i386" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources" -F/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator -include "/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch" -MMD -MT dependencies -MF "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadAppDelegate.d" --serialize-diagnostics "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadAppDelegate.dia" -c /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadAppDelegate.m -o "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadAppDelegate.o"36"2DAEBC0C-C9CE-4D9A-BEAB-34B671DA8DCF-
+
+CCompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadViewController.o" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365172044.350947
+e365172044.585371
+r1
+xCompileC
+xbuild/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadViewController.o
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadViewController.m60035a4c15c4b541^b2d9954c15c4b541^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadViewController.m0000000000000000^3717"CompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadViewController.o" MyWorldiPad/MyWorldiPadViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-generated-files.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-own-target-headers.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-all-target-headers.hmap" -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-project-headers.hmap" -I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/include "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources/i386" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources" -F/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator -include "/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch" -MMD -MT dependencies -MF "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadViewController.d" --serialize-diagnostics "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadViewController.dia" -c /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/MyWorldiPadViewController.m -o "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/MyWorldiPadViewController.o"36"8DDC7288-10F9-4B65-B919-9BA92242E099-
+
+CCompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/TimeViewController.o" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365172044.350967
+e365172044.520110
+r1
+xCompileC
+xbuild/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/TimeViewController.o
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.m8bfd594c15c4b541^d237854c15c4b541^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.m0000000000000000^3675"CompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/TimeViewController.o" MyWorldiPad/TimeViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-generated-files.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-own-target-headers.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-all-target-headers.hmap" -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-project-headers.hmap" -I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/include "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources/i386" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources" -F/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator -include "/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch" -MMD -MT dependencies -MF "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/TimeViewController.d" --serialize-diagnostics "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/TimeViewController.dia" -c /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.m -o "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/TimeViewController.o"36"D63FAD05-C212-45C1-B3E7-656B425B77BA-
+
+CCompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/main.o" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365172044.350332
+e365172044.490985
+r1
+xCompileC
+xbuild/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/main.o
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection73"Compile /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/main.m1cd1594c15c4b541^b5c17d4c15c4b541^---0#0#0#-19%DVTDocumentLocation2@81"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/main.m0000000000000000^3591"CompileC "build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/main.o" MyWorldiPad/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-generated-files.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-own-target-headers.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-all-target-headers.hmap" -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-project-headers.hmap" -I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/include "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources/i386" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources" -F/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator -include "/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch" -MMD -MT dependencies -MF "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/main.d" --serialize-diagnostics "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/main.dia" -c /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/main.m -o "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/main.o"36"B5E573BC-3021-4006-A133-D5A1E7158E6D-
+
+CCompileXIB /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.xib
+s365172044.971073
+e365172046.218341
+r1
+xCompileXIB
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compiling /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.xib3eb3f84c15c4b541^1155384e15c4b541^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.xib0000000000000000^899"CompileXIB MyWorldiPad/InfoViewController.xib    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/InfoViewController.nib" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/InfoViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk36"5A510F00-B363-4A95-9D28-AE273AB3EDF2-
+
+CCompileXIB /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.xib
+s365172044.968967
+e365172046.213781
+r1
+xCompileXIB
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compiling /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.xib452af84c15c4b541^e0ba364e15c4b541^---0#0#0#-19%DVTDocumentLocation2@97"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.xib0000000000000000^899"CompileXIB MyWorldiPad/TimeViewController.xib    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/TimeViewController.nib" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/TimeViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk36"149BFAE6-D478-4B36-B3AE-224B04E89111-
+
+CCompileXIB /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/MainWindow.xib
+s365172044.893496
+e365172045.345133
+r1
+xCompileXIB
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/MainWindow.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compiling /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/MainWindow.xib20d5e44c15c4b541^0360584d15c4b541^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/MainWindow.xib0000000000000000^902"CompileXIB MyWorldiPad/en.lproj/MainWindow.xib    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/en.lproj/MainWindow.nib" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/MainWindow.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk36"93D5B30D-0910-4053-B5FC-6FF9C94E6C96-
+
+CCompileXIB /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/MyWorldiPadViewController.xib
+s365172044.894081
+e365172046.373196
+r1
+xCompileXIB
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/MyWorldiPadViewController.xib
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection107"Compiling /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/MyWorldiPadViewController.xib34f7e44c15c4b541^4c8a5f4e15c4b541^---0#0#0#-19%DVTDocumentLocation2@113"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/MyWorldiPadViewController.xib0000000000000000^947"CompileXIB MyWorldiPad/en.lproj/MyWorldiPadViewController.xib    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/en.lproj/MyWorldiPadViewController.nib" /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/MyWorldiPadViewController.xib --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk36"8606FA26-8C32-4767-BE21-E448236DA00B-
+
+CCopyStringsFile "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/en.lproj/InfoPlist.strings" MyWorldiPad/en.lproj/InfoPlist.strings
+s365172044.893505
+e365172044.899569
+r1
+xCopyStringsFile
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/en.lproj/InfoPlist.strings
+xMyWorldiPad/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Copy MyWorldiPad/en.lproj/InfoPlist.strings2638e54c15c4b541^d449e64c15c4b541^---0#0#0#-19%DVTDocumentLocation2@101"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/en.lproj/InfoPlist.strings0000000000000000^625"CopyStringsFile "build/Debug-iphonesimulator/ My World for iPad.app/en.lproj/InfoPlist.strings" MyWorldiPad/en.lproj/InfoPlist.strings    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/en.lproj" -- MyWorldiPad/en.lproj/InfoPlist.strings36"7A3660DE-66FA-43C4-A7E6-DCE26EC6C513-
+
+CCpResource MathStarsIcon57pix.png "build/Debug-iphonesimulator/ My World for iPad.app/MathStarsIcon57pix.png"
+s365172044.904937
+e365172044.926438
+r1
+xCpResource
+xMathStarsIcon57pix.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/MathStarsIcon57pix.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Copy build/Debug-iphonesimulator/ My World for iPad.app/MathStarsIcon57pix.png5abde74c15c4b541^5e2fed4c15c4b541^---0#0#0#-19%DVTDocumentLocation2@144"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/MathStarsIcon57pix.png000000000080d041^746"CpResource MathStarsIcon57pix.png "build/Debug-iphonesimulator/ My World for iPad.app/MathStarsIcon57pix.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/MathStarsIcon57pix.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"40C0A5E0-7E82-4B05-86B7-1CC911351C15-
+
+CCpResource MyWorld114.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld114.png"
+s365172044.956001
+e365172044.958777
+r1
+xCpResource
+xMyWorld114.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/MyWorld114.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Copy build/Debug-iphonesimulator/ My World for iPad.app/MyWorld114.png5ed6f44c15c4b541^6473f54c15c4b541^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/MyWorld114.png000000000080d041^722"CpResource MyWorld114.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld114.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorld114.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"FE5923C9-D07F-4375-914E-23467F33C6A9-
+
+CCpResource MyWorld144.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld144.png"
+s365172045.352318
+e365172045.354846
+r1
+xCpResource
+xMyWorld144.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/MyWorld144.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Copy build/Debug-iphonesimulator/ My World for iPad.app/MyWorld144.pngc3495a4d15c4b541^5de05a4d15c4b541^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/MyWorld144.png000000000080d041^722"CpResource MyWorld144.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld144.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorld144.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"1F2CA325-9A6D-4A68-8A93-B84C147CF269-
+
+CCpResource MyWorld512.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld512.png"
+s365172044.957277
+e365172044.960114
+r1
+xCpResource
+xMyWorld512.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/MyWorld512.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Copy build/Debug-iphonesimulator/ My World for iPad.app/MyWorld512.png1022f54c15c4b541^8ecaf54c15c4b541^---0#0#0#-19%DVTDocumentLocation2@136"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/MyWorld512.png000000000080d041^722"CpResource MyWorld512.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld512.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorld512.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"594A0C05-1122-42B3-9C03-BF1410CF5BFB-
+
+CCpResource MyWorld57.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld57.png"
+s365172044.928371
+e365172044.956056
+r1
+xCpResource
+xMyWorld57.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/MyWorld57.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy build/Debug-iphonesimulator/ My World for iPad.app/MyWorld57.pngadbfed4c15c4b541^b0c7f44c15c4b541^---0#0#0#-19%DVTDocumentLocation2@135"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/MyWorld57.png000000000080d041^719"CpResource MyWorld57.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld57.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorld57.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"25D09AF4-1BB6-4A05-A657-34DA186F56AE-
+
+CCpResource MyWorld72.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld72.png"
+s365172045.348470
+e365172045.351067
+r1
+xCpResource
+xMyWorld72.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/MyWorld72.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Copy build/Debug-iphonesimulator/ My World for iPad.app/MyWorld72.pngd34e594d15c4b541^33df594d15c4b541^---0#0#0#-19%DVTDocumentLocation2@135"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/MyWorld72.png000000000080d041^719"CpResource MyWorld72.png "build/Debug-iphonesimulator/ My World for iPad.app/MyWorld72.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorld72.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"BC015550-7615-4D09-AA65-1A249C34CB19-
+
+CCpResource NameIs.png "build/Debug-iphonesimulator/ My World for iPad.app/NameIs.png"
+s365172045.357332
+e365172045.367974
+r1
+xCpResource
+xNameIs.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/NameIs.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Copy build/Debug-iphonesimulator/ My World for iPad.app/NameIs.pngf3925b4d15c4b541^9c335e4d15c4b541^---0#0#0#-19%DVTDocumentLocation2@132"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/NameIs.png000000000080d041^710"CpResource NameIs.png "build/Debug-iphonesimulator/ My World for iPad.app/NameIs.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/NameIs.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"364761C3-9726-4522-819A-DD0605307DC0-
+
+CCpResource Pin2.png "build/Debug-iphonesimulator/ My World for iPad.app/Pin2.png"
+s365172044.961401
+e365172044.963879
+r1
+xCpResource
+xPin2.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/Pin2.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/Debug-iphonesimulator/ My World for iPad.app/Pin2.pngec30f64c15c4b541^4cc1f64c15c4b541^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/Pin2.png000000000080d041^704"CpResource Pin2.png "build/Debug-iphonesimulator/ My World for iPad.app/Pin2.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/Pin2.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"01AFACCF-44E1-46B9-BD91-0A8467F4B2C6-
+
+CCpResource Pin23.png "build/Debug-iphonesimulator/ My World for iPad.app/Pin23.png"
+s365172044.963430
+e365172044.965862
+r1
+xCpResource
+xPin23.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/Pin23.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Debug-iphonesimulator/ My World for iPad.app/Pin23.pnge4bdf64c15c4b541^7443f74c15c4b541^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/Pin23.png000000000080d041^707"CpResource Pin23.png "build/Debug-iphonesimulator/ My World for iPad.app/Pin23.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/Pin23.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"93BE5823-955C-4998-8E7C-292DAD1944CC-
+
+CCpResource alertviewcustom.png "build/Debug-iphonesimulator/ My World for iPad.app/alertviewcustom.png"
+s365172044.894092
+e365172044.899896
+r1
+xCpResource
+xalertviewcustom.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/alertviewcustom.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Copy build/Debug-iphonesimulator/ My World for iPad.app/alertviewcustom.png5036e54c15c4b541^c85fe64c15c4b541^---0#0#0#-19%DVTDocumentLocation2@141"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/alertviewcustom.png000000000080d041^737"CpResource alertviewcustom.png "build/Debug-iphonesimulator/ My World for iPad.app/alertviewcustom.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/alertviewcustom.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"432AD13C-E301-4764-9880-3E71477744FD-
+
+CCpResource bird.png "build/Debug-iphonesimulator/ My World for iPad.app/bird.png"
+s365172044.900870
+e365172044.903592
+r1
+xCpResource
+xbird.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/bird.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/Debug-iphonesimulator/ My World for iPad.app/bird.png1bb9e64c15c4b541^df51e74c15c4b541^---0#0#0#-19%DVTDocumentLocation2@130"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/bird.png000000000080d041^704"CpResource bird.png "build/Debug-iphonesimulator/ My World for iPad.app/bird.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/bird.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"69F23485-3E80-4518-B0A6-FA30C098913F-
+
+CCpResource car.png "build/Debug-iphonesimulator/ My World for iPad.app/car.png"
+s365172044.900878
+e365172044.904492
+r1
+xCpResource
+xcar.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/car.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy build/Debug-iphonesimulator/ My World for iPad.app/car.png52b8e64c15c4b541^d28ee74c15c4b541^---0#0#0#-19%DVTDocumentLocation2@129"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/car.png000000000080d041^701"CpResource car.png "build/Debug-iphonesimulator/ My World for iPad.app/car.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/car.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"7DF7FD6D-630A-4A46-8DC6-53C03F1F4DB9-
+
+CCpResource customButton.png "build/Debug-iphonesimulator/ My World for iPad.app/customButton.png"
+s365172044.904788
+e365172044.927796
+r1
+xCpResource
+xcustomButton.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/customButton.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection72"Copy build/Debug-iphonesimulator/ My World for iPad.app/customButton.png62bbe74c15c4b541^1b84ed4c15c4b541^---0#0#0#-19%DVTDocumentLocation2@138"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/customButton.png000000000080d041^728"CpResource customButton.png "build/Debug-iphonesimulator/ My World for iPad.app/customButton.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/customButton.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"B0DA940C-FD0D-45FF-8660-8196FA85C4D5-
+
+CCpResource myLocationBigger.png "build/Debug-iphonesimulator/ My World for iPad.app/myLocationBigger.png"
+s365172044.928194
+e365172044.953421
+r1
+xCpResource
+xmyLocationBigger.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/myLocationBigger.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection76"Copy build/Debug-iphonesimulator/ My World for iPad.app/myLocationBigger.png1cb6ed4c15c4b541^f415f44c15c4b541^---0#0#0#-19%DVTDocumentLocation2@142"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/myLocationBigger.png000000000080d041^740"CpResource myLocationBigger.png "build/Debug-iphonesimulator/ My World for iPad.app/myLocationBigger.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/myLocationBigger.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"B262A83D-AD68-4FE9-AEF4-CC1834BF2C00-
+
+CCpResource mzl.jarxthyh.170x170-75.png "build/Debug-iphonesimulator/ My World for iPad.app/mzl.jarxthyh.170x170-75.png"
+s365172044.960053
+e365172044.962235
+r1
+xCpResource
+xmzl.jarxthyh.170x170-75.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/mzl.jarxthyh.170x170-75.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Copy build/Debug-iphonesimulator/ My World for iPad.app/mzl.jarxthyh.170x170-75.png3cddf54c15c4b541^6d55f64c15c4b541^---0#0#0#-19%DVTDocumentLocation2@149"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/mzl.jarxthyh.170x170-75.png000000000080d041^761"CpResource mzl.jarxthyh.170x170-75.png "build/Debug-iphonesimulator/ My World for iPad.app/mzl.jarxthyh.170x170-75.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/mzl.jarxthyh.170x170-75.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"FE1EB761-0C00-4E68-B3F2-BD92050484D8-
+
+CCpResource plane.png "build/Debug-iphonesimulator/ My World for iPad.app/plane.png"
+s365172044.965146
+e365172044.967719
+r1
+xCpResource
+xplane.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/plane.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Debug-iphonesimulator/ My World for iPad.app/plane.png412cf74c15c4b541^00c6f74c15c4b541^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/plane.png000000000080d041^707"CpResource plane.png "build/Debug-iphonesimulator/ My World for iPad.app/plane.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/plane.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"8C57AD6E-B341-453A-9722-9BBDC9707D17-
+
+CCpResource ruler.png "build/Debug-iphonesimulator/ My World for iPad.app/ruler.png"
+s365172044.967490
+e365172044.969883
+r1
+xCpResource
+xruler.png
+xbuild/Debug-iphonesimulator/ My World for iPad.app/ruler.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/Debug-iphonesimulator/ My World for iPad.app/ruler.png00caf74c15c4b541^d84af84c15c4b541^---0#0#0#-19%DVTDocumentLocation2@131"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app/ruler.png000000000080d041^707"CpResource ruler.png "build/Debug-iphonesimulator/ My World for iPad.app/ruler.png"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip /Users/laurawhite/Desktop/MyWorldiPad201207128/ruler.png "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"036138FC-179A-4D87-9812-F611F9781E24-
+
+CGenerateDSYMFile "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app.dSYM" "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/ My World for iPad"
+s365172044.845385
+e365172044.885448
+r1
+xGenerateDSYMFile
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app.dSYM
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/ My World for iPad
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Generating /Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app.dSYMc688d84c15c4b541^11ace24c15c4b541^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/%20My%20World%20for%20iPad.app.dSYM000000000080d041^732"GenerateDSYMFile "build/Debug-iphonesimulator/ My World for iPad.app.dSYM" "build/Debug-iphonesimulator/ My World for iPad.app/ My World for iPad"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/dsymutil "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/ My World for iPad" -o "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app.dSYM"36"86E7C121-C647-48CE-85D7-E43C2B021586-
+
+CLd "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/ My World for iPad" normal i386
+s365172044.608205
+e365172044.836831
+r1
+xLd
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/ My World for iPad
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Link /Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/ My World for iPad84f19b4c15c4b541^8e3ad64c15c4b541^---0#0#0#--1314"Ld "build/Debug-iphonesimulator/ My World for iPad.app/ My World for iPad" normal i386    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -L/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator -F/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator -filelist "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/Objects-normal/i386/ My World for iPad.LinkFileList" -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -no_implicit_dylibs -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -framework CoreLocation -framework MapKit -framework UIKit -framework Foundation -framework CoreGraphics -o "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/ My World for iPad"36"123F1AB7-9811-477D-AA6E-1DD7C0403FBD-
+
+CProcessInfoPlistFile "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/Info.plist" "MyWorldiPad/My World for iPad-Info.plist"
+s365172043.860397
+e365172043.863794
+r1
+xProcessInfoPlistFile
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/Info.plist
+xMyWorldiPad/My World for iPad-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Process MyWorldiPad/My World for iPad-Info.plist5858dc4b15c4b541^d34add4b15c4b541^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/My%20World%20for%20iPad-Info.plist0000000000000000^745"ProcessInfoPlistFile "build/Debug-iphonesimulator/ My World for iPad.app/Info.plist" "MyWorldiPad/My World for iPad-Info.plist"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility "MyWorldiPad/My World for iPad-Info.plist" -genpkginfo "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/PkgInfo" -expandbuildsettings -format binary -platform iphonesimulator -o "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/Info.plist"36"745B8B4A-5A61-4A8F-8047-F93E4ED96C11-
+
+CProcessInfoPlistFile "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app/Info.plist" MyWorldiPad/MyWorldiPad-Info.plist
+r0
+
+CProcessPCH "/Users/laurawhite/Library/Developer/Xcode/DerivedData/My_World_for_iPad-gtxvldciqfkdgmapqmtlbcwwyzhn/Index/PrecompiledHeaders/My World for iPad-Prefix-bgycfdinjhywjjeeszovbaweaexq_ast/My World for iPad-Prefix.pch.pth" "MyWorldiPad/My World for iPad-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH "/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch.pth" "MyWorldiPad/My World for iPad-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s365172043.873328
+e365172044.343320
+r1
+xProcessPCH
+x/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch.pth
+xMyWorldiPad/My World for iPad-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Precompile MyWorldiPad/My World for iPad-Prefix.pchefffdf4b15c4b541^1ee2574c15c4b541^---0#0#0#-19%DVTDocumentLocation2@109"file://localhost/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/My%20World%20for%20iPad-Prefix.pch0000000000000000^3623"ProcessPCH "/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch.pth" "MyWorldiPad/My World for iPad-Prefix.pch" normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator5.1.sdk -fexceptions -fasm-blocks -Wprotocol -Wdeprecated-declarations -mmacosx-version-min=10.6 -g -Wno-conversion -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-generated-files.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-own-target-headers.hmap" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-all-target-headers.hmap" -iquote "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/ My World for iPad-project-headers.hmap" -I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/include "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources/i386" "-I/Users/laurawhite/Desktop/MyWorldiPad201207128/build/My World for iPad.build/Debug-iphonesimulator/ My World for iPad.build/DerivedSources" -F/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator --serialize-diagnostics "/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch.dia" -c "/Users/laurawhite/Desktop/MyWorldiPad201207128/MyWorldiPad/My World for iPad-Prefix.pch" -o "/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch.pth" -MMD -MT dependencies -MF "/var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/My World for iPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/My World for iPad-Prefix.pch.d"36"767BDCEE-BACD-49E9-88B2-423058EEF9A5-
+
+CProcessPCH /Users/laurawhite/Library/Developer/Xcode/DerivedData/My_World_for_iPad-gtxvldciqfkdgmapqmtlbcwwyzhn/Index/PrecompiledHeaders/MyWorldiPad-Prefix-bgycfdinjhywjjeeszovbaweaexq_ast/MyWorldiPad-Prefix.pch.pth MyWorldiPad/MyWorldiPad-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /var/folders/f3/y79fwv_s6bs60sx_jn8fcflc0000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/MyWorldiPad-Prefix-blceymviqxzgfvemcrbwcqdbnnwt/MyWorldiPad-Prefix.pch.pth MyWorldiPad/MyWorldiPad-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+r0
+
+CTouch "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"
+s365172046.381303
+e365172046.389805
+r1
+xTouch
+x/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Touch /Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app7db3614e15c4b541^21ca634e15c4b541^---0#0#0#--430"Touch "build/Debug-iphonesimulator/ My World for iPad.app"    cd /Users/laurawhite/Desktop/MyWorldiPad201207128    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/laurawhite/Desktop/MyWorldiPad201207128/build/Debug-iphonesimulator/ My World for iPad.app"36"10F6B291-915D-4B16-B6A9-79B2DB0192C1-
+

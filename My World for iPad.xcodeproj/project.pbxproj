@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F964A1A1446374F00E21940 /* MyWorld72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F964A191446374F00E21940 /* MyWorld72.png */; };
+		82092574165176D3003E4E98 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 82092573165176D3003E4E98 /* search.png */; };
+		8487317F142EE9350079023C /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8487317E142EE9350079023C /* Annotation.m */; };
+		84873183142EE9500079023C /* AnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84873182142EE9500079023C /* AnnotationView.m */; };
+		84BC5F92142EE60F0021DAAD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BC5F91142EE60F0021DAAD /* UIKit.framework */; };
+		84BC5F94142EE60F0021DAAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BC5F93142EE60F0021DAAD /* Foundation.framework */; };
+		84BC5F96142EE60F0021DAAD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BC5F95142EE60F0021DAAD /* CoreGraphics.framework */; };
+		84BC5F9C142EE60F0021DAAD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5F9A142EE60F0021DAAD /* InfoPlist.strings */; };
+		84BC5F9F142EE60F0021DAAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC5F9E142EE60F0021DAAD /* main.m */; };
+		84BC5FA2142EE60F0021DAAD /* MyWorldiPadAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC5FA1142EE60F0021DAAD /* MyWorldiPadAppDelegate.m */; };
+		84BC5FA5142EE60F0021DAAD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FA3142EE60F0021DAAD /* MainWindow.xib */; };
+		84BC5FA8142EE60F0021DAAD /* MyWorldiPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC5FA7142EE60F0021DAAD /* MyWorldiPadViewController.m */; };
+		84BC5FAB142EE60F0021DAAD /* MyWorldiPadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FA9142EE60F0021DAAD /* MyWorldiPadViewController.xib */; };
+		84BC5FB2142EE62B0021DAAD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BC5FB1142EE62A0021DAAD /* MapKit.framework */; };
+		84BC5FB4142EE6320021DAAD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BC5FB3142EE6320021DAAD /* CoreLocation.framework */; };
+		84BC5FC6142EE69F0021DAAD /* alertviewcustom.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FB6142EE69F0021DAAD /* alertviewcustom.png */; };
+		84BC5FC7142EE69F0021DAAD /* bird.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FB7142EE69F0021DAAD /* bird.png */; };
+		84BC5FC8142EE69F0021DAAD /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FB8142EE69F0021DAAD /* car.png */; };
+		84BC5FC9142EE69F0021DAAD /* customButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FB9142EE69F0021DAAD /* customButton.png */; };
+		84BC5FCC142EE69F0021DAAD /* MathStarsIcon57pix.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FBC142EE69F0021DAAD /* MathStarsIcon57pix.png */; };
+		84BC5FCD142EE69F0021DAAD /* myLocationBigger.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FBD142EE69F0021DAAD /* myLocationBigger.png */; };
+		84BC5FCE142EE69F0021DAAD /* MyWorld57.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FBE142EE69F0021DAAD /* MyWorld57.png */; };
+		84BC5FCF142EE69F0021DAAD /* MyWorld114.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FBF142EE69F0021DAAD /* MyWorld114.png */; };
+		84BC5FD1142EE69F0021DAAD /* mzl.jarxthyh.170x170-75.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FC1142EE69F0021DAAD /* mzl.jarxthyh.170x170-75.png */; };
+		84BC5FD2142EE69F0021DAAD /* Pin2.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FC2142EE69F0021DAAD /* Pin2.png */; };
+		84BC5FD3142EE69F0021DAAD /* Pin23.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FC3142EE69F0021DAAD /* Pin23.png */; };
+		84BC5FD4142EE69F0021DAAD /* plane.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FC4142EE69F0021DAAD /* plane.png */; };
+		84BC5FD5142EE69F0021DAAD /* ruler.png in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FC5142EE69F0021DAAD /* ruler.png */; };
+		84BC5FE2142EE6D70021DAAD /* TimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC5FDD142EE6D70021DAAD /* TimeViewController.m */; };
+		84BC5FE3142EE6D70021DAAD /* TimeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FDE142EE6D70021DAAD /* TimeViewController.xib */; };
+		84BC5FE4142EE6D70021DAAD /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84BC5FE0142EE6D70021DAAD /* InfoViewController.m */; };
+		84BC5FE5142EE6D70021DAAD /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84BC5FE1142EE6D70021DAAD /* InfoViewController.xib */; };
+		ED06EAC615C4145A00DDB649 /* NameIs.png in Resources */ = {isa = PBXBuildFile; fileRef = ED06EAC515C4145A00DDB649 /* NameIs.png */; };
+		ED06EAC815C417D600DDB649 /* iSpell.png in Resources */ = {isa = PBXBuildFile; fileRef = ED06EAC715C417D600DDB649 /* iSpell.png */; };
+		EDE7022F15B9A9D6007A82AE /* MyWorld144.png in Resources */ = {isa = PBXBuildFile; fileRef = EDE7022E15B9A9D5007A82AE /* MyWorld144.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F964A191446374F00E21940 /* MyWorld72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyWorld72.png; sourceTree = "<group>"; };
+		82092573165176D3003E4E98 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		8487317D142EE9350079023C /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		8487317E142EE9350079023C /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		84873181142EE9500079023C /* AnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotationView.h; sourceTree = "<group>"; };
+		84873182142EE9500079023C /* AnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotationView.m; sourceTree = "<group>"; };
+		84BC5F8D142EE60F0021DAAD /*  My World for iPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = " My World for iPad.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BC5F91142EE60F0021DAAD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		84BC5F93142EE60F0021DAAD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84BC5F95142EE60F0021DAAD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		84BC5F99142EE60F0021DAAD /* My World for iPad-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "My World for iPad-Info.plist"; sourceTree = "<group>"; };
+		84BC5F9B142EE60F0021DAAD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84BC5F9D142EE60F0021DAAD /* My World for iPad-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "My World for iPad-Prefix.pch"; sourceTree = "<group>"; };
+		84BC5F9E142EE60F0021DAAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84BC5FA0142EE60F0021DAAD /* MyWorldiPadAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWorldiPadAppDelegate.h; sourceTree = "<group>"; };
+		84BC5FA1142EE60F0021DAAD /* MyWorldiPadAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWorldiPadAppDelegate.m; sourceTree = "<group>"; };
+		84BC5FA4142EE60F0021DAAD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		84BC5FA6142EE60F0021DAAD /* MyWorldiPadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyWorldiPadViewController.h; sourceTree = "<group>"; };
+		84BC5FA7142EE60F0021DAAD /* MyWorldiPadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWorldiPadViewController.m; sourceTree = "<group>"; };
+		84BC5FAA142EE60F0021DAAD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MyWorldiPadViewController.xib; sourceTree = "<group>"; };
+		84BC5FB1142EE62A0021DAAD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84BC5FB3142EE6320021DAAD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		84BC5FB6142EE69F0021DAAD /* alertviewcustom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alertviewcustom.png; sourceTree = "<group>"; };
+		84BC5FB7142EE69F0021DAAD /* bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird.png; sourceTree = "<group>"; };
+		84BC5FB8142EE69F0021DAAD /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		84BC5FB9142EE69F0021DAAD /* customButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customButton.png; sourceTree = "<group>"; };
+		84BC5FBC142EE69F0021DAAD /* MathStarsIcon57pix.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MathStarsIcon57pix.png; sourceTree = "<group>"; };
+		84BC5FBD142EE69F0021DAAD /* myLocationBigger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myLocationBigger.png; sourceTree = "<group>"; };
+		84BC5FBE142EE69F0021DAAD /* MyWorld57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyWorld57.png; sourceTree = "<group>"; };
+		84BC5FBF142EE69F0021DAAD /* MyWorld114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyWorld114.png; sourceTree = "<group>"; };
+		84BC5FC1142EE69F0021DAAD /* mzl.jarxthyh.170x170-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mzl.jarxthyh.170x170-75.png"; sourceTree = "<group>"; };
+		84BC5FC2142EE69F0021DAAD /* Pin2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pin2.png; sourceTree = "<group>"; };
+		84BC5FC3142EE69F0021DAAD /* Pin23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pin23.png; sourceTree = "<group>"; };
+		84BC5FC4142EE69F0021DAAD /* plane.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane.png; sourceTree = "<group>"; };
+		84BC5FC5142EE69F0021DAAD /* ruler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ruler.png; sourceTree = "<group>"; };
+		84BC5FDC142EE6D70021DAAD /* TimeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeViewController.h; sourceTree = "<group>"; };
+		84BC5FDD142EE6D70021DAAD /* TimeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeViewController.m; sourceTree = "<group>"; };
+		84BC5FDE142EE6D70021DAAD /* TimeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimeViewController.xib; sourceTree = "<group>"; };
+		84BC5FDF142EE6D70021DAAD /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		84BC5FE0142EE6D70021DAAD /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		84BC5FE1142EE6D70021DAAD /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
+		ED06EAC515C4145A00DDB649 /* NameIs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NameIs.png; sourceTree = "<group>"; };
+		ED06EAC715C417D600DDB649 /* iSpell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iSpell.png; sourceTree = "<group>"; };
+		EDE7022E15B9A9D5007A82AE /* MyWorld144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyWorld144.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84BC5F8A142EE60F0021DAAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BC5FB4142EE6320021DAAD /* CoreLocation.framework in Frameworks */,
+				84BC5FB2142EE62B0021DAAD /* MapKit.framework in Frameworks */,
+				84BC5F92142EE60F0021DAAD /* UIKit.framework in Frameworks */,
+				84BC5F94142EE60F0021DAAD /* Foundation.framework in Frameworks */,
+				84BC5F96142EE60F0021DAAD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84BC5F82142EE60E0021DAAD = {
+			isa = PBXGroup;
+			children = (
+				84BC5FB5142EE68E0021DAAD /* Images */,
+				84BC5FB3142EE6320021DAAD /* CoreLocation.framework */,
+				84BC5FB1142EE62A0021DAAD /* MapKit.framework */,
+				84BC5F97142EE60F0021DAAD /* MyWorldiPad */,
+				84BC5F90142EE60F0021DAAD /* Frameworks */,
+				84BC5F8E142EE60F0021DAAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84BC5F8E142EE60F0021DAAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84BC5F8D142EE60F0021DAAD /*  My World for iPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84BC5F90142EE60F0021DAAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84BC5F91142EE60F0021DAAD /* UIKit.framework */,
+				84BC5F93142EE60F0021DAAD /* Foundation.framework */,
+				84BC5F95142EE60F0021DAAD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84BC5F97142EE60F0021DAAD /* MyWorldiPad */ = {
+			isa = PBXGroup;
+			children = (
+				8487317D142EE9350079023C /* Annotation.h */,
+				8487317E142EE9350079023C /* Annotation.m */,
+				84873181142EE9500079023C /* AnnotationView.h */,
+				84873182142EE9500079023C /* AnnotationView.m */,
+				84BC5FDC142EE6D70021DAAD /* TimeViewController.h */,
+				84BC5FDD142EE6D70021DAAD /* TimeViewController.m */,
+				84BC5FDE142EE6D70021DAAD /* TimeViewController.xib */,
+				84BC5FDF142EE6D70021DAAD /* InfoViewController.h */,
+				84BC5FE0142EE6D70021DAAD /* InfoViewController.m */,
+				84BC5FE1142EE6D70021DAAD /* InfoViewController.xib */,
+				84BC5FA0142EE60F0021DAAD /* MyWorldiPadAppDelegate.h */,
+				84BC5FA1142EE60F0021DAAD /* MyWorldiPadAppDelegate.m */,
+				84BC5FA3142EE60F0021DAAD /* MainWindow.xib */,
+				84BC5FA6142EE60F0021DAAD /* MyWorldiPadViewController.h */,
+				84BC5FA7142EE60F0021DAAD /* MyWorldiPadViewController.m */,
+				84BC5FA9142EE60F0021DAAD /* MyWorldiPadViewController.xib */,
+				84BC5F98142EE60F0021DAAD /* Supporting Files */,
+			);
+			path = MyWorldiPad;
+			sourceTree = "<group>";
+		};
+		84BC5F98142EE60F0021DAAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84BC5F99142EE60F0021DAAD /* My World for iPad-Info.plist */,
+				84BC5F9A142EE60F0021DAAD /* InfoPlist.strings */,
+				84BC5F9D142EE60F0021DAAD /* My World for iPad-Prefix.pch */,
+				84BC5F9E142EE60F0021DAAD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84BC5FB5142EE68E0021DAAD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84BC5FB6142EE69F0021DAAD /* alertviewcustom.png */,
+				84BC5FB7142EE69F0021DAAD /* bird.png */,
+				82092573165176D3003E4E98 /* search.png */,
+				84BC5FB8142EE69F0021DAAD /* car.png */,
+				84BC5FB9142EE69F0021DAAD /* customButton.png */,
+				84BC5FBC142EE69F0021DAAD /* MathStarsIcon57pix.png */,
+				84BC5FBD142EE69F0021DAAD /* myLocationBigger.png */,
+				84BC5FBE142EE69F0021DAAD /* MyWorld57.png */,
+				4F964A191446374F00E21940 /* MyWorld72.png */,
+				EDE7022E15B9A9D5007A82AE /* MyWorld144.png */,
+				84BC5FBF142EE69F0021DAAD /* MyWorld114.png */,
+				84BC5FC1142EE69F0021DAAD /* mzl.jarxthyh.170x170-75.png */,
+				84BC5FC2142EE69F0021DAAD /* Pin2.png */,
+				84BC5FC3142EE69F0021DAAD /* Pin23.png */,
+				84BC5FC4142EE69F0021DAAD /* plane.png */,
+				84BC5FC5142EE69F0021DAAD /* ruler.png */,
+				ED06EAC515C4145A00DDB649 /* NameIs.png */,
+				ED06EAC715C417D600DDB649 /* iSpell.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84BC5F8C142EE60F0021DAAD /*  My World for iPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84BC5FAE142EE60F0021DAAD /* Build configuration list for PBXNativeTarget " My World for iPad" */;
+			buildPhases = (
+				84BC5F89142EE60F0021DAAD /* Sources */,
+				84BC5F8A142EE60F0021DAAD /* Frameworks */,
+				84BC5F8B142EE60F0021DAAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = " My World for iPad";
+			productName = MyWorldiPad;
+			productReference = 84BC5F8D142EE60F0021DAAD /*  My World for iPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84BC5F84142EE60E0021DAAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "University of West Florida";
+			};
+			buildConfigurationList = 84BC5F87142EE60E0021DAAD /* Build configuration list for PBXProject "My World for iPad" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84BC5F82142EE60E0021DAAD;
+			productRefGroup = 84BC5F8E142EE60F0021DAAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84BC5F8C142EE60F0021DAAD /*  My World for iPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84BC5F8B142EE60F0021DAAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BC5F9C142EE60F0021DAAD /* InfoPlist.strings in Resources */,
+				84BC5FA5142EE60F0021DAAD /* MainWindow.xib in Resources */,
+				84BC5FAB142EE60F0021DAAD /* MyWorldiPadViewController.xib in Resources */,
+				84BC5FC6142EE69F0021DAAD /* alertviewcustom.png in Resources */,
+				84BC5FC7142EE69F0021DAAD /* bird.png in Resources */,
+				84BC5FC8142EE69F0021DAAD /* car.png in Resources */,
+				84BC5FC9142EE69F0021DAAD /* customButton.png in Resources */,
+				84BC5FCC142EE69F0021DAAD /* MathStarsIcon57pix.png in Resources */,
+				84BC5FCD142EE69F0021DAAD /* myLocationBigger.png in Resources */,
+				84BC5FCE142EE69F0021DAAD /* MyWorld57.png in Resources */,
+				84BC5FCF142EE69F0021DAAD /* MyWorld114.png in Resources */,
+				84BC5FD1142EE69F0021DAAD /* mzl.jarxthyh.170x170-75.png in Resources */,
+				84BC5FD2142EE69F0021DAAD /* Pin2.png in Resources */,
+				84BC5FD3142EE69F0021DAAD /* Pin23.png in Resources */,
+				84BC5FD4142EE69F0021DAAD /* plane.png in Resources */,
+				84BC5FD5142EE69F0021DAAD /* ruler.png in Resources */,
+				84BC5FE3142EE6D70021DAAD /* TimeViewController.xib in Resources */,
+				84BC5FE5142EE6D70021DAAD /* InfoViewController.xib in Resources */,
+				4F964A1A1446374F00E21940 /* MyWorld72.png in Resources */,
+				EDE7022F15B9A9D6007A82AE /* MyWorld144.png in Resources */,
+				ED06EAC615C4145A00DDB649 /* NameIs.png in Resources */,
+				ED06EAC815C417D600DDB649 /* iSpell.png in Resources */,
+				82092574165176D3003E4E98 /* search.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84BC5F89142EE60F0021DAAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84BC5F9F142EE60F0021DAAD /* main.m in Sources */,
+				84BC5FA2142EE60F0021DAAD /* MyWorldiPadAppDelegate.m in Sources */,
+				84BC5FA8142EE60F0021DAAD /* MyWorldiPadViewController.m in Sources */,
+				84BC5FE2142EE6D70021DAAD /* TimeViewController.m in Sources */,
+				84BC5FE4142EE6D70021DAAD /* InfoViewController.m in Sources */,
+				8487317F142EE9350079023C /* Annotation.m in Sources */,
+				84873183142EE9500079023C /* AnnotationView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84BC5F9A142EE60F0021DAAD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BC5F9B142EE60F0021DAAD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84BC5FA3142EE60F0021DAAD /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BC5FA4142EE60F0021DAAD /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		84BC5FA9142EE60F0021DAAD /* MyWorldiPadViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84BC5FAA142EE60F0021DAAD /* en */,
+			);
+			name = MyWorldiPadViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84BC5FAC142EE60F0021DAAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		84BC5FAD142EE60F0021DAAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		84BC5FAF142EE60F0021DAAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Laura White (R7F3Z4GZ27)";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyWorldiPad/My World for iPad-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "MyWorldiPad/My World for iPad-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "16560F71-DE3B-4A65-BE01-DE0058702DAB";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84BC5FB0142EE60F0021DAAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Laura J. White";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Laura J. White";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MyWorldiPad/My World for iPad-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "MyWorldiPad/My World for iPad-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6F6DB560-B0AF-4C3B-B324-22275F09C317";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6F6DB560-B0AF-4C3B-B324-22275F09C317";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84BC5F87142EE60E0021DAAD /* Build configuration list for PBXProject "My World for iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BC5FAC142EE60F0021DAAD /* Debug */,
+				84BC5FAD142EE60F0021DAAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84BC5FAE142EE60F0021DAAD /* Build configuration list for PBXNativeTarget " My World for iPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84BC5FAF142EE60F0021DAAD /* Debug */,
+				84BC5FB0142EE60F0021DAAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84BC5F84142EE60E0021DAAD /* Project object */;
+}
