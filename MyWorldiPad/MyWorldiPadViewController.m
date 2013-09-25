@@ -134,12 +134,13 @@ BOOL updated; // For checking if MapKit updated the user's location
 		annotation.subtitle = [[NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) annotation.coordinate.latitude, (float) annotation.coordinate.longitude]retain];	
         
         //Draw the line between two points
-        [self drawLine];
+        
         [self measure:nil];
     }
     if (newState == MKAnnotationViewDragStateDragging) {
         //NSLog(@"Dragging");
     }
+    [self drawLine];
 }
 
 
@@ -148,9 +149,14 @@ BOOL updated; // For checking if MapKit updated the user's location
 {
     
     MKPolylineView * aView=[[[MKPolylineView alloc] initWithPolyline:(MKPolyline *)overlay]autorelease];
-    //  aView.fillColor = [[UIColor blueColor]   colorWithAlphaComponent:1.0];
-    aView.strokeColor = [[UIColor blueColor] colorWithAlphaComponent:0.8];
+    if([overlay isKindOfClass:[MKGeodesicPolyline class]]){
+        aView.strokeColor = [[UIColor blueColor] colorWithAlphaComponent:0.8];
+     }
+    else{
+        aView.strokeColor = [[UIColor redColor] colorWithAlphaComponent:0.8];
+    }
     aView.lineWidth = 7;
+
     return aView;
 }
 
@@ -208,7 +214,13 @@ BOOL updated; // For checking if MapKit updated the user's location
         trackPoints[0]=point1;
         trackPoints[1]=point2;
         MKPolyline * poli=[MKPolyline polylineWithCoordinates:trackPoints count:2];
+      
+        
+        //CLLocationCoordinate2D coords[2] = {sourceAirport.coordinate, destinationAirport.coordinate};
+         MKGeodesicPolyline *flyPartPolyline = [MKGeodesicPolyline polylineWithCoordinates:trackPoints count:2];
         [mapView addOverlay:poli];
+        [mapView addOverlay:flyPartPolyline];
+        
     }
     else if(mapAnnotations.count==2){
         //Display distance
@@ -218,7 +230,10 @@ BOOL updated; // For checking if MapKit updated the user's location
         trackPoints[0]=point1;
         trackPoints[1]=point2;
         MKPolyline * poli=[MKPolyline polylineWithCoordinates:trackPoints count:2];
+        MKGeodesicPolyline *flyPartPolyline = [MKGeodesicPolyline polylineWithCoordinates:trackPoints count:2];
+        
         [mapView addOverlay:poli];
+        [mapView addOverlay:flyPartPolyline];
     }
 }
 
