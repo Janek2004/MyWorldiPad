@@ -40,12 +40,12 @@
         UIBarButtonItem *actionBarButton;
         UIBarButtonItem *infoBarButton;
     }
-@property (nonatomic, retain) IBOutlet UIBarButtonItem *actionBarButton;
-@property (nonatomic, retain) IBOutlet UIBarButtonItem *infoBarButton;
+@property (nonatomic, strong) IBOutlet UIBarButtonItem *actionBarButton;
+@property (nonatomic, strong) IBOutlet UIBarButtonItem *infoBarButton;
     
 //Property defined. 
-@property (nonatomic, retain) IBOutlet MKMapView *mapView;
-@property (nonatomic, retain) NSMutableArray *mapAnnotations;
+@property (nonatomic, strong) IBOutlet MKMapView *mapView;
+@property (nonatomic, strong) NSMutableArray *mapAnnotations;
 @property(nonatomic, assign) int annoCounter;
 
 -(IBAction) displayMenu:(id)sender;

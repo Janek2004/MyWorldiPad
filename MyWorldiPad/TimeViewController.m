@@ -106,25 +106,13 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
-    [userSpeedTxtField release];
     userSpeedTxtField = nil;
-    [planeTimeLabel release];
     planeTimeLabel = nil;
-    [carTimeLabel release];
     carTimeLabel = nil;
-    [userTimeLabel release];
     userTimeLabel = nil;
 }
 
 
-- (void)dealloc
-{
-    [userTimeLabel release];
-    [carTimeLabel release];
-    [planeTimeLabel release];
-    [userSpeedTxtField release];
-    [super dealloc];
-}
 
 
 - (void)didReceiveMemoryWarning

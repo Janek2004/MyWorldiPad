@@ -8,6 +8,12 @@
 #import "AnnotationView.h"
 #import "InfoViewController.h"
 #import "TimeViewController.h"
+@interface MyWorldiPadViewController()
+@property (strong, nonatomic) IBOutlet UILabel *shortestGreatCircleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *equirectangularLabel;
+@property (strong,nonatomic) UIPopoverController * infoPopover;
+
+@end
 
 
 @implementation MyWorldiPadViewController
@@ -117,29 +123,32 @@ BOOL updated; // For checking if MapKit updated the user's location
 
 
 #pragma  mark Map View delegate
-//Dragging 
+
+
+//Dragging
 - (void)mapView:(MKMapView *)_mapView annotationView:(MKAnnotationView *)annotationView didChangeDragState:(MKAnnotationViewDragState)newState fromOldState:(MKAnnotationViewDragState)oldState {
     [mapView removeOverlays:mapView.overlays];
-    distanceFirstLabel.text=@"";
+   
 	if (oldState == MKAnnotationViewDragStateDragging) {
 		Annotation *annotation = (Annotation *)annotationView.annotation;
         annotation.title=@"Drag Me";
-		annotation.subtitle = [[NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) annotation.coordinate.latitude, (float) annotation.coordinate.longitude]retain];
+		annotation.subtitle = [NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) annotation.coordinate.latitude, (float) annotation.coordinate.longitude];
         
     }
     if(newState==MKAnnotationViewDragStateEnding)
     {
         Annotation *annotation = (Annotation *)annotationView.annotation;
         //annotation.title=@"Drag Me";
-		annotation.subtitle = [[NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) annotation.coordinate.latitude, (float) annotation.coordinate.longitude]retain];	
+		annotation.subtitle = [NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) annotation.coordinate.latitude, (float) annotation.coordinate.longitude];	
         
         //Draw the line between two points
-        
-        [self measure:nil];
+       
     }
     if (newState == MKAnnotationViewDragStateDragging) {
-        //NSLog(@"Dragging");
+        NSLog(@"Dragging");
     }
+    [self updateLabels];
+    [self measure:nil];
     [self drawLine];
 }
 
@@ -148,7 +157,7 @@ BOOL updated; // For checking if MapKit updated the user's location
 - (MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id <MKOverlay>)overlay
 {
     
-    MKPolylineView * aView=[[[MKPolylineView alloc] initWithPolyline:(MKPolyline *)overlay]autorelease];
+    MKPolylineView * aView=[[MKPolylineView alloc] initWithPolyline:(MKPolyline *)overlay];
     if([overlay isKindOfClass:[MKGeodesicPolyline class]]){
         aView.strokeColor = [[UIColor blueColor] colorWithAlphaComponent:0.8];
      }
@@ -333,7 +342,7 @@ BOOL updated; // For checking if MapKit updated the user's location
     [mapAnnotations removeAllObjects];
     Annotation * a=[[Annotation alloc]initWithCoordinate:cord1 addressDictionary:nil];
     a.title=@"Drag Me";
-    a.subtitle=[[NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) a.coordinate.latitude, (float) a.coordinate.longitude]retain];
+    a.subtitle=[NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) a.coordinate.latitude, (float) a.coordinate.longitude];
     [mapView addAnnotation:a];
     [mapAnnotations addObject:a];
     [self findMyLocation];
@@ -344,7 +353,6 @@ BOOL updated; // For checking if MapKit updated the user's location
 - (IBAction)displayMenu:(id)sender {
     UIActionSheet * a=[[UIActionSheet alloc]initWithTitle:@"" delegate:self cancelButtonTitle:@"Nothing, just looking at the Map" destructiveButtonTitle:nil otherButtonTitles:@"Distance From Me", @"Distance Between Places", @"How Long Will It Take?",@"Find me", nil];
     [a showInView:self.view];
-    [a release];
 }
 
 
@@ -363,10 +371,10 @@ BOOL updated; // For checking if MapKit updated the user's location
     Annotation * b=[[Annotation alloc]initWithCoordinate:cord2 addressDictionary:nil];
     
     a.title=@"Drag Me";
-    a.subtitle=[[NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) a.coordinate.latitude, (float) a.coordinate.longitude]retain];
+    a.subtitle=[NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) a.coordinate.latitude, (float) a.coordinate.longitude];
     
     b.title=@"Drag Me";
-    b.subtitle=[[NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) a.coordinate.latitude, (float) a.coordinate.longitude]retain];
+    b.subtitle=[NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) a.coordinate.latitude, (float) a.coordinate.longitude];
     
     [mapView addAnnotation:a];
     [mapView addAnnotation:b];
@@ -406,10 +414,75 @@ BOOL updated; // For checking if MapKit updated the user's location
     }
 }
 
+-(BOOL)shouldAutorotate{
+    //update labels here
+
+    CGRect sg = self.shortestGreatCircleLabel.frame;
+    CGRect ep = self.equirectangularLabel.frame;
+    sg.size.width = CGRectGetWidth(self.view.bounds)/2.0;
+    ep.size.width = CGRectGetWidth(self.view.bounds)/2.0;
+
+    sg.origin = CGPointMake(0, 0);
+    ep.origin = CGPointMake(CGRectGetWidth(self.view.bounds)/2.0,0);
+    
+    self.shortestGreatCircleLabel.frame = sg;
+    self.equirectangularLabel.frame = ep;
+    
+    
+    return YES;
+
+}
+
+
+-(void)viewWillAppear:(BOOL)animated{
+   // [self.shortestGreatCircleLabel removeConstraints:self.shortestGreatCircleLabel.constraints];
+   // [self.equirectangularLabel removeConstraints:self.shortestGreatCircleLabel.constraints];
+//    NSLayoutConstraint *constrain = [NSLayoutConstraint constraintWithItem:self.shortestGreatCircleLabel
+//                                                                 attribute:NSLayoutAttributeWidth
+//                                                                 relatedBy:0
+//                                                                    toItem:self.view
+//                                                                 attribute:NSLayoutAttributeWidth
+//                                                                multiplier:.5
+//                                                                  constant:0];
+//    
+//    NSLayoutConstraint *constrain2 = [NSLayoutConstraint constraintWithItem:self.equirectangularLabel
+//                                                                  attribute:NSLayoutAttributeWidth
+//                                                                  relatedBy:0
+//                                                                     toItem:self.view
+//                                                                  attribute:NSLayoutAttributeWidth
+//                                                                 multiplier:.5
+//                                                                   constant:0];
+//    
+//    NSLayoutConstraint * constrain3 = [NSLayoutConstraint constraintWithItem:self.equirectangularLabel attribute:NSLayoutAttributeTop relatedBy:0 toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:100];
+//      NSLayoutConstraint * constrain4 = [NSLayoutConstraint constraintWithItem:self.shortestGreatCircleLabel attribute:NSLayoutAttributeTop relatedBy:0 toItem:self.view attribute:NSLayoutAttributeTop multiplier:1 constant:100];
+//    
+//    
+//    NSLayoutConstraint *con1 = [NSLayoutConstraint constraintWithItem:self.shortestGreatCircleLabel attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1  constant:35];
+//    NSLayoutConstraint *con2 = [NSLayoutConstraint constraintWithItem:self.equirectangularLabel attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1  constant:35];
+//    
+//    
+//    
+//     [self.view addConstraint:constrain];
+//     [self.view addConstraint:constrain2];
+//     [self.view addConstraint:constrain3];
+//     [self.view addConstraint:constrain4];
+//    
+//     [self.view addConstraint:con1];
+//     [self.view addConstraint:con2];
+    
+}
+
+
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //fix autolayout issues
+    
+    self.equirectangularLabel.textColor =[UIColor redColor];
+    self.shortestGreatCircleLabel.textColor =[UIColor blueColor];
+    
+    
     defaults=[NSUserDefaults standardUserDefaults];
     
     if(![[defaults objectForKey:@"Alert"]isEqualToString:@"No"])
@@ -458,58 +531,42 @@ BOOL updated; // For checking if MapKit updated the user's location
     [self setActionBarButton:nil];
     locationManager.delegate=nil;
     mapView.delegate=nil;
-    [longitudeLabel release];
     longitudeLabel = nil;
-    [altitudeLabel release];
     altitudeLabel = nil;
-    [latitudeLabel release];
     latitudeLabel = nil;
-    [customAlertView release];
     customAlertView = nil;
-    [showAlertSwitch release];
     showAlertSwitch = nil;
-    [distanceFirstLabel release];
     distanceFirstLabel = nil;
-    [timeView release];
     timeView = nil;
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 }
 
 //Information is released.
-- (void)dealloc {
-    [locationManager release];
-	[mapView release];
-	[mapAnnotations release];
-    [distanceFirstLabel release];
-    [timeView release];
-    [showAlertSwitch release];
-    [customAlertView release];
-    [latitudeLabel release];
-    [altitudeLabel release];
-    [longitudeLabel release];
-    [actionBarButton release];
-    [infoBarButton release];
-	[super dealloc];
-}
 
 -(void) updateLabels {
     //Update labels
     distanceKm = distance;
     distanceMiles= distance * 1.0/1.609344;
     distanceFirstLabel.text=[NSString stringWithFormat:@"Equirectangular distance of line: %.1f Km / %.1f Miles          Shortest great circle distance: %.1f Km / %.1f Miles", distanceKm, distanceMiles, shortestDistanceKm, shortestDistanceMiles];
+    
+    self.shortestGreatCircleLabel.text =[NSString stringWithFormat:@"Shortest great circle distance: %.1f Km / %.1f Miles",shortestDistanceKm,shortestDistanceMiles];
+    self.equirectangularLabel.text =[NSString stringWithFormat:@"Equirectangular distance of line: %.1f Km / %.1f Miles", distanceKm, distanceMiles];
+    
+    
 }
 
 
 - (IBAction)showInfoView:(id)sender {
     InfoViewController * i=[[InfoViewController alloc]initWithNibName:@"InfoViewController" bundle:nil];
-   // i.contentSizeForViewInPopover=i.view.frame.size;
-    // [self presentModalViewController:i animated:YES];
-    UIPopoverController * pop=[[UIPopoverController alloc]initWithContentViewController:i];
-    [pop presentPopoverFromBarButtonItem:infoBarButton permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
-    
-    // [time release];
-    // [i release];
+
+    if(!_infoPopover){
+        _infoPopover=[[UIPopoverController alloc]initWithContentViewController:i];
+    }
+    if(!_infoPopover.isPopoverVisible){
+        [_infoPopover presentPopoverFromBarButtonItem:infoBarButton permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
+
+    }
 }
 
 

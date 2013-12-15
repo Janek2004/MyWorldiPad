@@ -33,12 +33,6 @@
 }
 
 
-- (void)dealloc
-{   
-    [scrollView release];
-    [infoSubView release];
-    [super dealloc];
-}
 
 
 - (void)didReceiveMemoryWarning
@@ -66,9 +60,7 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    [infoSubView release];
     infoSubView = nil;
-    [scrollView release];
     scrollView = nil;
 
     // Release any retained subviews of the main view.
