@@ -552,8 +552,6 @@ BOOL updated; // For checking if MapKit updated the user's location
     
     self.shortestGreatCircleLabel.text =[NSString stringWithFormat:@"Shortest great circle distance: %.1f Km / %.1f Miles",shortestDistanceKm,shortestDistanceMiles];
     self.equirectangularLabel.text =[NSString stringWithFormat:@"Equirectangular distance of line: %.1f Km / %.1f Miles", distanceKm, distanceMiles];
-    
-    
 }
 
 
