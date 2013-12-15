@@ -8,11 +8,14 @@
 #import "AnnotationView.h"
 #import "InfoViewController.h"
 #import "TimeViewController.h"
+
+
+#define InstructionsText @"Hold and Drag the Pin"
 @interface MyWorldiPadViewController()
 @property (strong, nonatomic) IBOutlet UILabel *shortestGreatCircleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *equirectangularLabel;
 @property (strong,nonatomic) UIPopoverController * infoPopover;
-
+@property (strong,nonatomic) UIPopoverController * timePopover;
 @end
 
 
@@ -131,7 +134,7 @@ BOOL updated; // For checking if MapKit updated the user's location
    
 	if (oldState == MKAnnotationViewDragStateDragging) {
 		Annotation *annotation = (Annotation *)annotationView.annotation;
-        annotation.title=@"Drag Me";
+        annotation.title=InstructionsText;
 		annotation.subtitle = [NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) annotation.coordinate.latitude, (float) annotation.coordinate.longitude];
         
     }
@@ -139,6 +142,7 @@ BOOL updated; // For checking if MapKit updated the user's location
     {
         Annotation *annotation = (Annotation *)annotationView.annotation;
         //annotation.title=@"Drag Me";
+        
 		annotation.subtitle = [NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) annotation.coordinate.latitude, (float) annotation.coordinate.longitude];	
         
         //Draw the line between two points
@@ -341,12 +345,14 @@ BOOL updated; // For checking if MapKit updated the user's location
     [mapView removeAnnotations:mapAnnotations];
     [mapAnnotations removeAllObjects];
     Annotation * a=[[Annotation alloc]initWithCoordinate:cord1 addressDictionary:nil];
-    a.title=@"Drag Me";
+    a.title=InstructionsText;
     a.subtitle=[NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) a.coordinate.latitude, (float) a.coordinate.longitude];
     [mapView addAnnotation:a];
     [mapAnnotations addObject:a];
     [self findMyLocation];
     [self drawLine];
+    [self measure:nil];
+
 }
 
 
@@ -370,10 +376,10 @@ BOOL updated; // For checking if MapKit updated the user's location
     Annotation * a=[[Annotation alloc]initWithCoordinate:cord1 addressDictionary:nil];
     Annotation * b=[[Annotation alloc]initWithCoordinate:cord2 addressDictionary:nil];
     
-    a.title=@"Drag Me";
+    a.title=InstructionsText;
     a.subtitle=[NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) a.coordinate.latitude, (float) a.coordinate.longitude];
     
-    b.title=@"Drag Me";
+    b.title=InstructionsText;
     b.subtitle=[NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) a.coordinate.latitude, (float) a.coordinate.longitude];
     
     [mapView addAnnotation:a];
@@ -382,6 +388,9 @@ BOOL updated; // For checking if MapKit updated the user's location
     [mapAnnotations addObject:b];
     [self findMyLocation];
     [self drawLine];
+    [self measure:nil];
+
+
 }
 
 
@@ -561,21 +570,26 @@ BOOL updated; // For checking if MapKit updated the user's location
     if(!_infoPopover){
         _infoPopover=[[UIPopoverController alloc]initWithContentViewController:i];
     }
-    if(!_infoPopover.isPopoverVisible){
-        [_infoPopover presentPopoverFromBarButtonItem:infoBarButton permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
-
+    if(_infoPopover.isPopoverVisible){
+       
+        [_infoPopover dismissPopoverAnimated:YES];
     }
+     [_infoPopover presentPopoverFromBarButtonItem:infoBarButton permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
 }
-
 
 - (IBAction)showTimeView:(id)sender{
     TimeViewController *time=[[TimeViewController alloc]initWithNibName:@"TimeViewController" bundle:nil];
     time.distance=distanceKm;
    // time.contentSizeForViewInPopover=time.view.frame.size;
-    UIPopoverController * pop=[[UIPopoverController alloc]initWithContentViewController:time];
-    [pop presentPopoverFromBarButtonItem:actionBarButton permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
-    // [time release];
-    // [pop release];
+ 
+     if(!_timePopover){
+         _timePopover=[[UIPopoverController alloc]initWithContentViewController:time];
+     }
+     if(_timePopover.isPopoverVisible){
+         [_timePopover dismissPopoverAnimated:YES];
+     }
+    [_timePopover presentPopoverFromBarButtonItem:actionBarButton permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
+
 }
 
 @end
