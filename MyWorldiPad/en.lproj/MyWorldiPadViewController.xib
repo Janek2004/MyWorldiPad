@@ -123,7 +123,7 @@
                     <rect key="frame" x="2" y="-1" width="265" height="185"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap on the pin to see the pop up label 'Drag Me' then drag the pin somewhere on the map. " lineBreakMode="tailTruncation" numberOfLines="4" minimumFontSize="10" id="8">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tap on the pin to see the pop up label 'Hold and Drag the Pin' then drag the pin somewhere on the map. " lineBreakMode="tailTruncation" numberOfLines="4" minimumFontSize="10" id="8">
                     <rect key="frame" x="23" y="15" width="234" height="70"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="15"/>
@@ -142,7 +142,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </switch>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5">
-                    <rect key="frame" x="81" y="86" width="115" height="37"/>
+                    <rect key="frame" x="78" y="93" width="115" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                     <state key="normal" backgroundImage="customButton.png">
