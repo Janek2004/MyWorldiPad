@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4F964A1A1446374F00E21940 /* MyWorld72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F964A191446374F00E21940 /* MyWorld72.png */; };
 		82092574165176D3003E4E98 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 82092573165176D3003E4E98 /* search.png */; };
+		82229F0718D0F3E700FE3716 /* JMCGeocoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 82229F0618D0F3E700FE3716 /* JMCGeocoder.m */; };
 		8249F77517EE4C860047303C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8249F77417EE4C860047303C /* Images.xcassets */; };
 		8487317F142EE9350079023C /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 8487317E142EE9350079023C /* Annotation.m */; };
 		84873183142EE9500079023C /* AnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84873182142EE9500079023C /* AnnotationView.m */; };
@@ -48,6 +49,9 @@
 /* Begin PBXFileReference section */
 		4F964A191446374F00E21940 /* MyWorld72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MyWorld72.png; sourceTree = "<group>"; };
 		82092573165176D3003E4E98 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		82229F0518D0F3E700FE3716 /* JMCGeocoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMCGeocoder.h; sourceTree = "<group>"; };
+		82229F0618D0F3E700FE3716 /* JMCGeocoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMCGeocoder.m; sourceTree = "<group>"; };
+		82229F0818D2791D00FE3716 /* NSError_custom_error_message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSError_custom_error_message.h; sourceTree = "<group>"; };
 		8249F77417EE4C860047303C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = " My World for iPad/Images.xcassets"; sourceTree = "<group>"; };
 		8487317D142EE9350079023C /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		8487317E142EE9350079023C /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
@@ -112,6 +116,9 @@
 		84BC5F82142EE60E0021DAAD = {
 			isa = PBXGroup;
 			children = (
+				82229F0518D0F3E700FE3716 /* JMCGeocoder.h */,
+				82229F0618D0F3E700FE3716 /* JMCGeocoder.m */,
+				82229F0818D2791D00FE3716 /* NSError_custom_error_message.h */,
 				8249F77417EE4C860047303C /* Images.xcassets */,
 				84BC5FB5142EE68E0021DAAD /* Images */,
 				84BC5FB3142EE6320021DAAD /* CoreLocation.framework */,
@@ -226,11 +233,11 @@
 		84BC5F84142EE60E0021DAAD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "University of West Florida";
 				TargetAttributes = {
 					84BC5F8C142EE60F0021DAAD = {
-						DevelopmentTeam = BZUY5AR8YB;
+						DevelopmentTeam = 96W6Q3D8BE;
 					};
 				};
 			};
@@ -292,6 +299,7 @@
 			files = (
 				84BC5F9F142EE60F0021DAAD /* main.m in Sources */,
 				84BC5FA2142EE60F0021DAAD /* MyWorldiPadAppDelegate.m in Sources */,
+				82229F0718D0F3E700FE3716 /* JMCGeocoder.m in Sources */,
 				84BC5FA8142EE60F0021DAAD /* MyWorldiPadViewController.m in Sources */,
 				84BC5FE2142EE6D70021DAAD /* TimeViewController.m in Sources */,
 				84BC5FE4142EE6D70021DAAD /* InfoViewController.m in Sources */,
@@ -333,7 +341,6 @@
 		84BC5FAC142EE60F0021DAAD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -344,6 +351,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -352,7 +360,6 @@
 		84BC5FAD142EE60F0021DAAD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -397,8 +404,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Laura J. White (96W6Q3D8BE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Laura J. White (96W6Q3D8BE)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MyWorldiPad/MyWorldForiPad-Prefix.pch";
@@ -407,7 +414,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = MyWorldForiPad;
 				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B180BE84-ADAA-45A7-805A-06E5597EEC08";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

@@ -10,12 +10,14 @@
 
 
 @interface Annotation : MKPlacemark {
-	CLLocationCoordinate2D coordinate;
-	NSString *__weak title;
-	NSString *__weak subtitle;
+
+//	NSString *__weak title;
+//	NSString *__weak subtitle;
 }
+
 @property (nonatomic, readwrite, assign) CLLocationCoordinate2D coordinate;
-@property (nonatomic, weak) 	NSString *title;
-@property (nonatomic, weak) 	NSString *subtitle;
+@property (nonatomic, strong) 	NSString *title;
+@property (nonatomic, strong) 	NSString *subtitle;
+@property (nonatomic, strong) CLPlacemark * placemark;
 
 @end

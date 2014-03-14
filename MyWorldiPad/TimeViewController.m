@@ -4,10 +4,11 @@
 //
 
 #import "TimeViewController.h"
-
+#define MILE 1.609344
 
 @implementation TimeViewController
 @synthesize distance;
+
 
 #pragma mark Text Field delegate
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{
@@ -19,9 +20,28 @@
 - (IBAction)calculateWithUserSpeed:(id)sender {
     float customSpeed= [userSpeedTxtField.text floatValue];
     
+
+    
     if(customSpeed>0){
-        float customTime=distance/customSpeed;
-        userTimeLabel.text=[NSString stringWithFormat:@"%.2f hours by your speed", customTime];
+        
+        
+        float customTime=distance/(customSpeed *MILE);
+        if(miles) {
+            customTime=distance/(customSpeed *MILE);
+        }
+        else{
+            customTime=distance/customSpeed;
+        }
+        
+        int customTimeH;// = floor(customTime);
+        int customTimeM;// = (customTime - customTimeH) * 60;
+
+        customTimeH = floor(customTime);
+        customTimeM = (customTime - customTimeH) * 60;
+
+        
+        
+        userTimeLabel.text=[NSString stringWithFormat:@"%d hours and %d minutes by your speed", customTimeH, customTimeM];
     }
     else{
         userTimeLabel.text=@"Can't go that slow";
@@ -35,7 +55,7 @@
     {
         [defaults setBool:YES forKey:@"Miles"];
         miles=YES;
-        adjDistance=distance * 1.0/1.609344;
+        adjDistance=distance * 1.0/MILE;
     }
     else{
         [defaults setBool:NO forKey:@"Miles"];
@@ -44,6 +64,7 @@
     }
     [defaults synchronize];
     [self updateSpeedLabels:adjDistance];
+    [self calculateWithUserSpeed:Nil];
 }
 
 
@@ -52,16 +73,44 @@
         float planeTime=_distance/600.0;
         float carTime=_distance/50.0;
         
-        planeTimeLabel.text=[NSString stringWithFormat:@"%.2f hours by plane",planeTime];
-        carTimeLabel.text=[NSString stringWithFormat:@"%.2f hours by car",carTime];
+        int planeTimeH = _distance / 600;
+        int planTimeM =  (int)_distance%600;
+        
+        planeTimeH = floor(planeTime);
+        planTimeM= (planeTime - planeTimeH) * 60;
+        
+        
+        int carTimeH = _distance/ 60;
+        int carTimeM =  (int)_distance%60;
+        
+        carTimeH = floor(carTime);
+        carTimeM = (carTime - carTimeH) * 60;
+        
+        planeTimeLabel.text=[NSString stringWithFormat:@"%d hours and  %d minutes  by plane",planeTimeH, planTimeM];
+        carTimeLabel.text=[NSString stringWithFormat:@"%d hours and %d minutes  by car",carTimeH, carTimeM];
         distanceSecondLabel.text=[NSString stringWithFormat:@"%.1f Miles along path",_distance]; 
     }
     else {
-        float time=_distance/(600.0 *1.609344);
-        float carTime=_distance/(50.0 *1.609344);
-        planeTimeLabel.text=[NSString stringWithFormat:@"%.2f hours by plane",time];
-        carTimeLabel.text=[NSString stringWithFormat:@"%.2f hours by car",carTime];
-        distanceSecondLabel.text=[NSString stringWithFormat:@"%.1f Km along path",_distance]; 
+        float planeTime=_distance/(600.0 *MILE);
+        float carTime=_distance/(50.0 *MILE);
+        
+        int planeTimeH = _distance / 600;
+        int planTimeM =  (int)_distance%600;
+        
+        planeTimeH = floor(planeTime);
+        planTimeM= (planeTime - planeTimeH) * 60;
+        
+        
+        int carTimeH = _distance/ 60;
+        int carTimeM =  (int)_distance%60;
+        
+        carTimeH = floor(carTime);
+        carTimeM = (carTime - carTimeH) * 60;
+
+        
+        planeTimeLabel.text=[NSString stringWithFormat:@"%d hours and  %d minutes  by plane",planeTimeH, planTimeM];
+        carTimeLabel.text=[NSString stringWithFormat:@"%.d hours and %d minutes  by car",carTimeH, carTimeM];
+        distanceSecondLabel.text=[NSString stringWithFormat:@"%.1f Km along path",_distance];
     }
 }
 

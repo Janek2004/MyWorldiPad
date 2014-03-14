@@ -8,6 +8,9 @@
 #import "AnnotationView.h"
 #import "InfoViewController.h"
 #import "TimeViewController.h"
+#import "JMCGeocoder.h"
+#import "NSError_custom_error_message.h"
+
 
 
 #define InstructionsText @"Hold and Drag the Pin"
@@ -16,6 +19,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *equirectangularLabel;
 @property (strong,nonatomic) UIPopoverController * infoPopover;
 @property (strong,nonatomic) UIPopoverController * timePopover;
+@property (strong, nonatomic) JMCGeocoder * geocoder;
+
+
 @end
 
 
@@ -46,9 +52,9 @@ BOOL updated; // For checking if MapKit updated the user's location
     CLLocationCoordinate2D loc1=CLLocationCoordinate2DMake(37,-30);   
     MKCoordinateSpan span=MKCoordinateSpanMake(85, 85);
     MKCoordinateRegion r=MKCoordinateRegionMake(loc1, span);
-    [mapView setRegion:r animated:YES];    
-    // [mapView setRegion:[mapView regionThatFits:newRegion] animated:TRUE];
+    [mapView setRegion:r animated:YES];
 }
+
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
     // test that the horizontal accuracy does not indicate an invalid measurement
@@ -97,6 +103,7 @@ BOOL updated; // For checking if MapKit updated the user's location
         [defaults setObject:@"No" forKey:@"Alert"];
         
     }
+    [defaults synchronize];
 }
 
 
@@ -141,16 +148,21 @@ BOOL updated; // For checking if MapKit updated the user's location
     if(newState==MKAnnotationViewDragStateEnding)
     {
         Annotation *annotation = (Annotation *)annotationView.annotation;
-        //annotation.title=@"Drag Me";
         
 		annotation.subtitle = [NSString stringWithFormat:@"Latitude %7.4f Longitude %8.4f", (float) annotation.coordinate.latitude, (float) annotation.coordinate.longitude];	
         
         //Draw the line between two points
+        [annotationView setDragState:MKAnnotationViewDragStateNone animated:YES];
        
     }
     if (newState == MKAnnotationViewDragStateDragging) {
         NSLog(@"Dragging");
+
     }
+    if (newState == MKAnnotationViewDragStateCanceling) {
+        [annotationView setDragState:MKAnnotationViewDragStateNone animated:YES];
+    }
+    
     [self updateLabels];
     [self measure:nil];
     [self drawLine];
@@ -176,19 +188,23 @@ BOOL updated; // For checking if MapKit updated the user's location
 
 //Delegate method returning view for annotation
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
-	
+    
     if ([annotation isKindOfClass:[MKUserLocation class]]) {
         return nil;		
 	}
 	
 	static NSString * const kPinAnnotationIdentifier = @"PinIdentifier";
-	MKAnnotationView *draggablePinView = [self.mapView dequeueReusableAnnotationViewWithIdentifier:kPinAnnotationIdentifier];
-    draggablePinView.draggable=YES;
+    AnnotationView *draggablePinView = (AnnotationView*) [self.mapView dequeueReusableAnnotationViewWithIdentifier:kPinAnnotationIdentifier];
+    
 	if (draggablePinView) {
         draggablePinView.annotation = annotation;
     } else {
 		draggablePinView = [[AnnotationView alloc]initWithAnnotation:annotation reuseIdentifier:kPinAnnotationIdentifier]; 
-	}		
+	}
+    draggablePinView.draggable=YES;
+    draggablePinView.annotation = annotation;
+
+    
     //	draggablePinView.annotation
 	return draggablePinView;
 }
@@ -208,6 +224,23 @@ BOOL updated; // For checking if MapKit updated the user's location
         view.frame = endFrame;
         
         [UIView commitAnimations];
+    }
+}
+
+-(void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
+    if([view isKindOfClass:[AnnotationView class]] ){
+        //view.annotation.
+        CLLocationCoordinate2D loc= [view.annotation coordinate];
+       [_geocoder getInformationAboutLocationWithCoordinate:loc withResults:^(NSString *message, NSError *error) {
+           if(error){
+               UIAlertView * al = [[UIAlertView alloc]initWithTitle:@"Information" message:error.custom_message delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+               [al show];
+           }
+           else{
+               UIAlertView * al = [[UIAlertView alloc]initWithTitle:@"Information" message: message delegate:Nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+               [al show];
+           }
+       }];
     }
 }
 
@@ -491,23 +524,24 @@ BOOL updated; // For checking if MapKit updated the user's location
     self.equirectangularLabel.textColor =[UIColor redColor];
     self.shortestGreatCircleLabel.textColor =[UIColor blueColor];
     
-    
+    _geocoder = [[JMCGeocoder alloc]init];
     defaults=[NSUserDefaults standardUserDefaults];
     
-    if(![[defaults objectForKey:@"Alert"]isEqualToString:@"No"])
-    {
-        [defaults setObject:@"Yes" forKey:@"Alert"];
-    }
-    else{
+//    if(![[defaults objectForKey:@"Alert"]isEqualToString:@"No"])
+//    {
+//        [defaults setObject:@"Yes" forKey:@"Alert"];
+//    }
+//    else{
         if([[defaults objectForKey:@"Alert"]isEqualToString:@"Yes"])
         {
             [showAlertSwitch setOn:YES];
         }
-        else{
-            [defaults setObject:@"No" forKey:@"Alert"];
-            [showAlertSwitch setOn:NO];
-        }
-    }
+//        else{
+//            [defaults setObject:@"No" forKey:@"Alert"];
+//            [showAlertSwitch setOn:NO];
+//        }
+    
+//    }
     miles=[defaults boolForKey:@"Miles"];
     
     [defaults synchronize];
@@ -521,11 +555,13 @@ BOOL updated; // For checking if MapKit updated the user's location
     // miles=FALSE;
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate=self;
-    locationManager.desiredAccuracy = kCLLocationAccuracyBest;    
+    locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
     // Set a movement threshold for new events.
-    locationManager.distanceFilter = 100;    
-    [locationManager startUpdatingLocation];
+    [self showStartLocation];
+    [locationManager startMonitoringSignificantLocationChanges];
+
 }
+
 
 
 - (void)didReceiveMemoryWarning {
@@ -581,13 +617,13 @@ BOOL updated; // For checking if MapKit updated the user's location
     TimeViewController *time=[[TimeViewController alloc]initWithNibName:@"TimeViewController" bundle:nil];
     time.distance=distanceKm;
    // time.contentSizeForViewInPopover=time.view.frame.size;
- 
-     if(!_timePopover){
-         _timePopover=[[UIPopoverController alloc]initWithContentViewController:time];
-     }
-     if(_timePopover.isPopoverVisible){
-         [_timePopover dismissPopoverAnimated:YES];
-     }
+    if(_timePopover.isPopoverVisible){
+        [_timePopover dismissPopoverAnimated:YES];
+    }
+    
+        self.timePopover=[[UIPopoverController alloc]initWithContentViewController:time];
+    
+    
     [_timePopover presentPopoverFromBarButtonItem:actionBarButton permittedArrowDirections:UIPopoverArrowDirectionDown animated:YES];
 
 }

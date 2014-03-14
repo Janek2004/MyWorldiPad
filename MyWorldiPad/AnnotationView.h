@@ -8,7 +8,8 @@
 #import <CoreLocation/CoreLocation.h>
 
 @interface AnnotationView : MKAnnotationView {
-    
+
 }
 
+@property (nonatomic,strong) CLPlacemark *placemark;
 @end
