@@ -175,10 +175,12 @@ BOOL updated; // For checking if MapKit updated the user's location
     
     MKPolylineView * aView=[[MKPolylineView alloc] initWithPolyline:(MKPolyline *)overlay];
     if([overlay isKindOfClass:[MKGeodesicPolyline class]]){
-        aView.strokeColor = [[UIColor blueColor] colorWithAlphaComponent:0.8];
+        // aView.strokeColor = [[UIColor blueColor] colorWithAlphaComponent:0.8];
+        aView.strokeColor = [UIColor colorWithHue: 0.99 saturation: 0.85 brightness: 0.8 alpha: 0.75];
      }
     else{
-        aView.strokeColor = [[UIColor redColor] colorWithAlphaComponent:0.8];
+        // aView.strokeColor = [[UIColor redColor] colorWithAlphaComponent:0.8];
+        aView.strokeColor = [UIColor colorWithHue: 0.55 saturation: 0.8 brightness: 0.8 alpha: 0.75];
     }
     aView.lineWidth = 7;
 
@@ -521,8 +523,10 @@ BOOL updated; // For checking if MapKit updated the user's location
     [super viewDidLoad];
     //fix autolayout issues
     
-    self.equirectangularLabel.textColor =[UIColor redColor];
-    self.shortestGreatCircleLabel.textColor =[UIColor blueColor];
+    self.equirectangularLabel.textColor =[UIColor colorWithHue: 0.99 saturation: 0.7 brightness: 0.8 alpha: 1.0];
+
+    self.shortestGreatCircleLabel.textColor =[UIColor colorWithHue: 0.55 saturation: 0.7 brightness: 0.8 alpha: 1.0];
+
     
     _geocoder = [[JMCGeocoder alloc]init];
     defaults=[NSUserDefaults standardUserDefaults];

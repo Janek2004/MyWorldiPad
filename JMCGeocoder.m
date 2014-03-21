@@ -14,6 +14,11 @@
 @property (nonatomic,strong) NSMutableDictionary * locationsDictionary;
 @end
 @implementation JMCGeocoder
+
+/*
+    Default Initializer
+*/
+
 - (id)init
 {
     self = [super init];
@@ -25,6 +30,9 @@
 }
 
 
+/*
+ get information about given location
+ */
 -(void)getInformationAboutLocationWithCoordinate:(CLLocationCoordinate2D )coordinate withResults:(void (^)(NSString* placemarks, NSError * error))result{
     if (!_geocoder){
         _geocoder = [[CLGeocoder alloc]init];
@@ -62,36 +70,35 @@
      }];
 }
 
+/*
+ convert a placemark to string
+ */
 
 -(NSString *)getInformationFromPlacemark:(CLPlacemark *)placemark{
     NSString * message =@"";
     
-    if(placemark.name){
+    if(placemark.name &&placemark.name.length>0){
         message = [message stringByAppendingString:[NSString stringWithFormat:@"%@",   placemark.name]];
     }
-
-    if(placemark.locality){
+    
+//    if(placemark.thoroughfare&&placemark.thoroughfare.length>0){
+//        message = [message stringByAppendingString:[NSString stringWithFormat:@"\n %@ ",placemark.thoroughfare]];
+//    }
+//
+    if(placemark.locality&&placemark.locality.length>0){
         message = [message stringByAppendingString:[NSString stringWithFormat:@"\n %@",placemark.locality]];
     }
-    
-    if(placemark.ISOcountryCode){
-        message = [message stringByAppendingString:[NSString stringWithFormat:@"\n %@",placemark.ISOcountryCode]];
-    }
-
-    if(placemark.country){
-        message = [message stringByAppendingString:[NSString stringWithFormat:@"\n %@",placemark.country]];
-    }
-
-    if(placemark.subThoroughfare){
-        message = [message stringByAppendingString:[NSString stringWithFormat:@"\n %@ ",placemark.subThoroughfare]];
-    }
-
-    
-    if(placemark.administrativeArea){
+    if(placemark.administrativeArea&&placemark.administrativeArea.length>0){
         message = [message stringByAppendingString:[NSString stringWithFormat:@"\n %@",placemark.administrativeArea]];
     }
-    
-    if(placemark.postalCode){
+    if(placemark.country&&placemark.country.length>0){
+        message = [message stringByAppendingString:[NSString stringWithFormat:@"\n %@",placemark.country]];
+    }
+    if(placemark.ISOcountryCode&&placemark.ISOcountryCode.length>0){
+        message = [message stringByAppendingString:[NSString stringWithFormat:@" (%@)",placemark.ISOcountryCode]];
+    }
+
+    if(placemark.postalCode&&placemark.postalCode.length>0){
         message = [message stringByAppendingString:[NSString stringWithFormat:@"\n %@",placemark.postalCode]];
     }
     
@@ -113,5 +120,4 @@
  @property (nonatomic, readonly) NSString *inlandWater; // eg. Lake Tahoe
  @property (nonatomic, readonly) NSString *ocean; // eg. Pacific Ocean
  @property (nonatomic, readonly) NSArray *areasOfInterest; // eg. Golden Gate Park
- 
  */

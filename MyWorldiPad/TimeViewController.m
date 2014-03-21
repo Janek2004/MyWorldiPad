@@ -20,8 +20,6 @@
 - (IBAction)calculateWithUserSpeed:(id)sender {
     float customSpeed= [userSpeedTxtField.text floatValue];
     
-
-    
     if(customSpeed>0){
         
         

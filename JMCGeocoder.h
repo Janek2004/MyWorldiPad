@@ -11,7 +11,16 @@
 
 
 @interface JMCGeocoder : NSObject
+
+/*
+  get information about given location
+*/
 -(void)getInformationAboutLocationWithCoordinate:(CLLocationCoordinate2D )coordinate withResults:(void (^)(NSString* placemarks, NSError * error))result;
+
+/*
+ convert a placemark to string
+*/
+-(NSString *)getInformationFromPlacemark:(CLPlacemark *)placemark;
 
 
 
